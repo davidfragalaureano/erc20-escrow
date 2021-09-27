@@ -1,0 +1,18 @@
+{
+    "deployer": {
+        "address": "",
+        "publicKey": "",
+        "privateKey": ""
+    },
+    "user1": {
+        "address": "",
+        "publicKey": "",
+        "privateKey": ""
+    },
+    "user2": {
+        "address": "",
+        "publicKey": "",
+        "privateKey": ""
+    },
+    "address": "0x803f40cfF8494b0491AE1d59cD3e30A7e840B2f5"
+}
