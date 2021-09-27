@@ -37,7 +37,7 @@ async function main() {
     console.log(`User 1 approval: ${JSON.stringify(user1Aproval)}`);
     console.log(`User 2 approval: ${JSON.stringify(user2Aproval)}`);
 
-    /* Witdraws */
+    /* Withdraws */
 
     const balanceBeforeWithdraw = await ERC20Swap.getAccountBalanceOfToken(WeenusToken.address, user1.address);
     console.log(`WeenusToken balance for user 1 before withdraw: ${balanceBeforeWithdraw}`);
@@ -75,13 +75,12 @@ async function main() {
 
     console.log('Swap should be completed by now');
 
+    /* Verify Contract has been destroyed after swap */
     try {
         await ERC20Swap.owner();
     } catch (error) {
         console.log('Contract ERC20Swap has been disbled');
     }
-    /* Verify Contract has been destroyed after swap 
- 
 
     /* Checking balances after Swap */
     const balanceu1 =  await XeenusToken.balanceOf(user1.address);
