@@ -40,8 +40,8 @@ contract ERC20Swap {
         owner = payable(msg.sender);
         exchanger1 = Payment(_exchanger1, IERC20(token1), amount1, false);
         exchanger2 = Payment(_exchanger2, IERC20(token2), amount2, false);
-        users[_exchanger1] = Payment(_exchanger1, IERC20(token1), amount1, false);
-        users[_exchanger2] = Payment(_exchanger2, IERC20(token2), amount2, false);
+        users[_exchanger1] = exchanger1;
+        users[_exchanger2] = exchanger2;
     }
 
     /**
@@ -59,7 +59,7 @@ contract ERC20Swap {
     }
 
     /**
-      * Users can widthdraw tokens if the sawp is has not been completed
+      * Users can widthdraw tokens if the swap has not been completed
      */
     function withdraw() external onlyUsers {
         require(!(exchanger1.depositSent && exchanger2.depositSent), 'Deposits are completed for swap, you cannot withdraw');
