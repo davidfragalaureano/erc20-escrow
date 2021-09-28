@@ -23,16 +23,19 @@ The contract is intantiated with the users that will interact with it, which tok
 ERC20 Tokens used:
 
 [Weenus Token](https://rinkeby.etherscan.io/address/0xaFF4481D10270F50f203E0763e2597776068CBc5#code)
+
 [Xeenus Token](https://rinkeby.etherscan.io/address/0x022E292b44B5a146F2e8ee36Ff44D3dd863C915c#code)
 
 User address are listed below:
 
 User 1: `0x3dcd47ee0f42291c879ef41a2f51eba14a1971c6`
+
 User 2: `0x96ff4884caa2736d8997714e58128689bf7f3a6d`
 
 And the amount of tokens both will trade are: 
 
 User 1: 100 Weenus
+
 User 2: 200 Xeenus
 
 ## Scripts folder
