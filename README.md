@@ -1,5 +1,6 @@
-# Basic Sample Hardhat Project
+# Basic ERC20 Escrow
 
+### Hardhat 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
 Try running some of the following tasks:
@@ -61,6 +62,6 @@ This folder holds the ABI code for each token
 
 This file contains the information of users and the contract itself (addresses, private & public keys)
 
-# Unit Tests
+## Unit Tests
 
 Ethers.js & Hardhat was used for tests, as well as waffle for mocking smart contracts
